@@ -74,6 +74,7 @@ Write-Verbose -Message "Using AjaxMin at path '$AjaxMinPath'."
 # Compiling solution.
 #
 Write-Verbose -Message "Compiling solution with '$MSBuild'."
+& $MSBuild /target:clean | Out-Null
 & $MSBuild | Out-Null
 
 #

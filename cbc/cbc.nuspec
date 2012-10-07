@@ -10,29 +10,23 @@
             https://github.com/knutkj/cbc/wiki
         </projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <summary>
-
-            A JavaScript library with function argument assertions, a function parser and assertion wrapper functionality. By wrapping your functions you get defined, notNull, bool, func, number, object, string and notEmpty assertions for free. The interface is specially optimised for the Visual Studio JavaScript IntelliSense.
-
+        <summary>A JavaScript library with function argument assertions, a function parser and assertion wrapper functionality. By wrapping your functions you get defined, notNull, bool, func, number, object, string and notEmpty assertions for free. The interface is specially optimised for the Visual Studio JavaScript IntelliSense.
         </summary>
-        <description>
+        <description>A JavaScript library with function argument assertions, a function parser and assertion wrapper functionality. By wrapping your functions you get defined, notNull, bool, func, number, object, string and notEmpty assertions for free. The interface is specially optimised for the Visual Studio JavaScript IntelliSense.
 
-            A JavaScript library with function argument assertions, a function parser and assertion wrapper functionality. By wrapping your functions you get defined, notNull, bool, func, number, object, string and notEmpty assertions for free. The interface is specially optimised for the Visual Studio JavaScript IntelliSense.
+Note that the assertions are not for unit testing, but for function arguments.
 
-            Note that the assertions are not for unit testing, but for function arguments.
-
-            This is a JavaScript design by contract (DbC) implementation. For more information about DcB visit: http://en.wikipedia.org/wiki/Design_by_contract.
-
+This is a JavaScript design by contract (DbC) implementation. For more information about DcB visit: http://en.wikipedia.org/wiki/Design_by_contract.
         </description>
-        <releaseNotes>
-            1.2.0: Breaking change in FuncInfo/ParamInfo getters. Changed from getPropertyName into get_propertyName.
-            1.2.0: New wrap function (cbc.contract.wrap).
-            1.2.0: New getDoc function (cbc.parse.getDoc).
-            1.1.0: New function parser (cbc.parse.func).
+        <releaseNotes>1.2.*: Implemented CbC test helpers. See https://github.com/knutkj/cbc/wiki/CbC-test-helpers for more information
+1.2.0: Breaking change in FuncInfo/ParamInfo getters. Changed from getPropertyName into get_propertyName.
+1.2.0: New wrap function (cbc.contract.wrap).
+1.2.0: New getDoc function (cbc.parse.getDoc).
+1.1.0: New function parser (cbc.parse.func).
         </releaseNotes>
         <copyright>Copyright 2012</copyright>
         <tags>
-            JavaScript, DbC, assert, assertion
+            JavaScript DbC assert assertion
         </tags>
     </metadata>
     <files>

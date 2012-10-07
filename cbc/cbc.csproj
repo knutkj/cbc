@@ -45,6 +45,7 @@
     <Content Include="cbc-tests.html" />
     <Content Include="cbc-tests2.html" />
     <Content Include="cbc.assert.js" />
+    <Content Include="cbc.testhelpers.js" />
     <Content Include="cbc.assert.tests.js" />
     <Content Include="cbc.contract.js" />
     <Content Include="cbc.contract.tests.js" />
@@ -53,6 +54,8 @@
     <Content Include="cbc.parse.tests.js" />
     <Content Include="cbc.priv.js" />
     <Content Include="Content\qunit.css" />
+    <Content Include="cbc.testhelpers.tests.js" />
+    <Content Include="cbc-testhelpers-tests.html" />
     <Content Include="Scripts\qunit.js" />
   </ItemGroup>
   <ItemGroup>
