@@ -1,0 +1,18 @@
+#
+# CbC build files.
+#
+build/
+tmp/
+
+#
+# Visual Studio user files.
+#
+*.suo
+*.csproj.user
+
+#
+# Visual Studio build and test dirs.
+#
+bin/
+obj/
+TestResults/

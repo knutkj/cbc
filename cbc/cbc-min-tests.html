@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>cbc min tests</title>
+    <link rel="stylesheet" href="qunit.css" type="text/css" />
+    <script type="text/javascript" src="qunit.js"></script>
+    <script type="text/javascript" src="cbc.min.js"></script>
+    <script type="text/javascript">
+
+        module("cbc.assert");
+
+        test("param: works", function () {
+    
+            // Exercise and Verify SUT...
+            cbc.assert.param("foo", "bar").is.string()
+    
+            // Fixture teardown...
+        });
+
+        module("cbc.parse");
+
+        test("func: works", function () {
+            
+            // Fixture setup...
+            function f (a) {}
+    
+            // Exercise SUT...
+            var nfo = cbc.parse.func(f);
+
+            // Verify SUT...
+            strictEqual(nfo.get_params()[0].get_name(), "a");
+            strictEqual(nfo.get_name(), "f");
+    
+            // Fixture teardown...
+        });
+
+        module("cbc.contract");
+
+        test("wrap: works", function () {
+            
+            // Fixture setup...
+            function f (a) {
+                /// <param name="a" type="String" />
+            }
+    
+            // Exercise SUT...
+            var fw = cbc.contract.wrap(f);            
+
+            // Verify SUT...
+            raises(function () {
+                fw()
+            }, function (e) {
+                return e.message === "Parameter a must be specified.";
+            });
+            strictEqual(fw.get_func(), f);
+    
+            // Fixture teardown...
+        });
+
+    </script>
+</head>
+<body>
+    <h1 id="qunit-header">cbc min tests</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture"></div>
+</body>
+</html>
