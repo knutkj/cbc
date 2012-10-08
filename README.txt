@@ -12,7 +12,6 @@ Visit https://github.com/knutkj/cbc/wiki for documentation.
 Please use the issue tracker at https://github.com/knutkj/cbc/issues for feature
 requests. Tag issues with the enhancement label.
 
-
 --------------------------------------------------------------------------------
  RELEASE NOTES
 --------------------------------------------------------------------------------
@@ -25,11 +24,10 @@ requests. Tag issues with the enhancement label.
  1.2.0
 -------
  - Breaking change in FuncInfo/ParamInfo getters. Changed from getPropertyName
-   into get_propertyName.
- - New wrap function (cbc.contract.wrap).
- - New getDoc function (cbc.parse.getDoc).
-
+   into get_propertyName
+ - New wrap function (cbc.contract.wrap)
+ - New getDoc function (cbc.parse.getDoc)
 
  1.1.0
 -------
- - New function parser (cbc.parse.func).
+ - New function parser (cbc.parse.func)
