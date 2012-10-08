@@ -18,11 +18,13 @@ Note that the assertions are not for unit testing, but for function arguments.
 
 This is a JavaScript design by contract (DbC) implementation. For more information about DcB visit: http://en.wikipedia.org/wiki/Design_by_contract.
         </description>
-        <releaseNotes>1.2.*: Implemented CbC test helpers. See https://github.com/knutkj/cbc/wiki/CbC-test-helpers for more information
-1.2.0: Breaking change in FuncInfo/ParamInfo getters. Changed from getPropertyName into get_propertyName.
-1.2.0: New wrap function (cbc.contract.wrap).
-1.2.0: New getDoc function (cbc.parse.getDoc).
-1.1.0: New function parser (cbc.parse.func).
+        <releaseNotes>1.2.4664.39309: Breaking change: moved CbC JavaScript files into scripts\cbc folder
+1.2.4664.39309: Added cbc.contract.js/cbc.contract.min.js to NuGet package
+1.2.4664.39309: Implemented CbC test helpers. See https://github.com/knutkj/cbc/wiki/CbC-test-helpers for more information
+1.2.0: Breaking change in FuncInfo/ParamInfo getters. Changed from getPropertyName into get_propertyName
+1.2.0: New wrap function (cbc.contract.wrap)
+1.2.0: New getDoc function (cbc.parse.getDoc)
+1.1.0: New function parser (cbc.parse.func)
         </releaseNotes>
         <copyright>Copyright 2012</copyright>
         <tags>
@@ -31,12 +33,15 @@ This is a JavaScript design by contract (DbC) implementation. For more informati
     </metadata>
     <files>
         <file src="..\README.txt" target="" />
-        <file src="cbc.js" target="Content\Scripts" />
-        <file src="cbc.min.js" target="Content\Scripts" />
-        <file src="cbc.ns.js" target="Content\Scripts" />
-        <file src="cbc.assert.js" target="Content\Scripts" />
-        <file src="cbc.assert.min.js" target="Content\Scripts" />
-        <file src="cbc.parse.js" target="Content\Scripts" />
-        <file src="cbc.parse.min.js" target="Content\Scripts" />
+        <file src="cbc.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.min.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.ns.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.assert.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.assert.min.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.parse.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.parse.min.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.contract.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.contract.min.js" target="Content\Scripts\cbc\" />
+        <file src="cbc.testhelpers.js" target="Content\Scripts\cbc\" />
     </files>
 </package>

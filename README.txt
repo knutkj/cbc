@@ -16,8 +16,10 @@ requests. Tag issues with the enhancement label.
  RELEASE NOTES
 --------------------------------------------------------------------------------
 
- 1.2.* (Under development)
----------------------------
+ 1.2.4664.39309
+----------------
+ - Breaking change: moved CbC JavaScript files into scripts\cbc folder
+ - Added cbc.contract.js/cbc.contract.min.js to NuGet package
  - Implemented CbC test helpers. See
    https://github.com/knutkj/cbc/wiki/CbC-test-helpers for more information
 

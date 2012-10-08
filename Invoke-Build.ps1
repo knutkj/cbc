@@ -117,6 +117,14 @@ $minifier = New-Object -TypeName Microsoft.Ajax.Utilities.Minifier
     }
 
 #
+# Copying test helpers.
+#
+Write-Verbose -Message 'Copying test helpers...'
+'cbc.testhelpers.js' | ForEach-Object -Process {    
+    $SolutionPath| Join-Path -ChildPath "cbc\$_"
+} | Copy-Item
+
+#
 # Minifying combined...
 #
 Write-Verbose -Message 'Minifying combined file...'
